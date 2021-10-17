@@ -1,4 +1,6 @@
 //  utilities
+
+// texts
 .text-left {
   text-align: left;
 }
@@ -10,6 +12,24 @@
 }
 .text-justify {
   text-align: justify;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-regular {
+  font-weight: $font-weight-regular;
+}
+.text-medium {
+  font-weight: $font-weight-medium;
+}
+.text-bold {
+  font-weight: $font-weight-bold;
 }
 
 // displays
@@ -62,6 +82,22 @@
 }
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
 }
 
 .place-content-center {
