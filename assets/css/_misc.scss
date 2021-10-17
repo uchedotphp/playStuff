@@ -1,0 +1,26 @@
+// typography and all that good stuff
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border-radius: $border-radius;
+  padding: 4px 19px;
+
+  .blue {
+    background-color: $deep-blue;
+  }
+
+  .light-blue {
+    background-color: red;
+  }
+}
