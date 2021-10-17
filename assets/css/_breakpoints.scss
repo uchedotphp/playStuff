@@ -1,0 +1,31 @@
+/***************/
+/* Breakpoints */
+/***************/
+$small-width: 42.85em; // 600px
+$medium-width: 68.57em; // 960px
+$large-width: 90.28em; // 1264px
+$extra-large-width: 136em; // 1904px
+
+@mixin tablet {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: #{$extra-large-width}) {
+    @content;
+  }
+}
+
+@mixin extra-large-desktop {
+  @media (min-width: #{$extra-large-width}) {
+    @content;
+  }
+}

@@ -1,26 +1,40 @@
 // typography and all that good stuff
 @import 'variables';
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $dark;
-}
-
 .button {
   display: flex;
   justify-content: center;
   border-radius: $border-radius;
-  padding: 4px 19px;
+  padding: 5px 19px;
+  cursor: pointer;
+  outline: none;
 
-  .blue {
-    background-color: $deep-blue;
+  &:disabled {
+    cursor: not-allowed;
   }
 
-  .light-blue {
-    background-color: red;
+  &.button-fill-blue {
+    background-color: $deep-blue;
+    &:hover {
+      background-color: $light-blue;
+    }
+  }
+
+  &.button-fill-red {
+    border: none;
+    background-color: $red;
+    color: $white;
+    font-weight: $font-weight-bold;
+    &:hover {
+      background-color: $light-blue;
+    }
+  }
+
+  &.button-outline {
+    background-color: $light-blue;
+    border: 1px solid $deep-blue;
+    &:hover {
+      background-color: $light-blue;
+    }
   }
 }

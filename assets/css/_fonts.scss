@@ -1,0 +1,58 @@
+@use 'sass:math';
+
+$base-font-size: 0.875rem; //14px
+$line-height: 32px; // 1.6
+
+$font-size-sm: $base-font-size * 0.75;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-size: $base-font-size;
+  line-height: $line-height;
+}
+
+// padding and margin
+@for $i from 0 through 50 {
+  // padding
+  .p-a-#{$i} {
+    padding: #{$i * 0.125}rem;
+  }
+  .p-t-#{$i} {
+    padding-top: #{$i * 0.125}rem;
+  }
+  .p-r-#{$i} {
+    padding-right: #{$i * 0.125}rem;
+  }
+  .p-b-#{$i} {
+    padding-bottom: #{$i * 0.125}rem;
+  }
+  .p-l-#{$i} {
+    padding-left: #{$i * 0.125}rem;
+  }
+
+  // margin
+  .m-a-#{$i} {
+    margin: #{$i * 0.125}rem;
+  }
+  .m-t-#{$i} {
+    margin-top: #{$i * 0.125}rem;
+  }
+  .m-r-#{$i} {
+    margin-right: #{$i * 0.125}rem;
+  }
+  .m-b-#{$i} {
+    margin-bottom: #{$i * 0.125}rem;
+  }
+  .m-l-#{$i} {
+    margin-left: #{$i * 0.125}rem;
+  }
+}
