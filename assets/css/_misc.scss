@@ -8,6 +8,8 @@
   padding: 5px 19px;
   cursor: pointer;
   outline: none;
+  color: $white;
+  font-weight: $font-weight-bold;
 
   &:disabled {
     cursor: not-allowed;
@@ -15,16 +17,16 @@
 
   &.button-fill-blue {
     background-color: $deep-blue;
-    &:hover {
-      background-color: $light-blue;
-    }
+    border: none;
+    // &:hover {
+    //   background-color: $light-blue;
+    // }
   }
 
   &.button-fill-red {
     border: none;
     background-color: $red;
     color: $white;
-    font-weight: $font-weight-bold;
     &:hover {
       background-color: $light-blue;
     }
